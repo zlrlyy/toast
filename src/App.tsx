@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Toast from './compoment/toast/Toast';
 
 function App() {
+  const handleClick=()=>{
+    Toast.info('123')
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -10,14 +14,12 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
+        <span
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={handleClick}
         >
           Learn React
-        </a>
+        </span>
       </header>
     </div>
   );
