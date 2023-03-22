@@ -1,19 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Toast from './compoment/toast/Toast';
+import Toast from './compoment/toast';
 
 function App() {
-  const handleClick=()=>{
-    Toast.info('123')
+  const handleClick = () => {
+    Toast.info('123', 3000)
   }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <span
           className="App-link"
           onClick={handleClick}

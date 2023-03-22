@@ -1,0 +1,20 @@
+.tips-toast-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 9999;
+}
+
+.tips-toast-content {
+  background: rgba(35, 36, 38, 0.8);
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #fff;
+}
